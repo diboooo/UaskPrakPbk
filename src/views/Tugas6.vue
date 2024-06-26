@@ -3,12 +3,12 @@
       <div class="custom-container">
         <q-card flat bordered class="custom-card">
           <q-card-section class="custom-card-section">
-            <h2 class="custom-card-title">Assignment 6</h2>
+            <h2 class="custom-card-title">Tugas 6</h2>
             <div class="custom-card-description">
             </div>
             <div class="custom-card-links">
-              <a class="custom-card-link" href="https://agusdiopratama-223510070-tugas6.vercel.app/" target="_blank">Visit Assignment 6</a>
-              <router-link to="/" class="custom-card-link">Back to Home</router-link>
+              <a class="custom-card-link" href="https://agusdiopratama-223510070-tugas6.vercel.app/" target="_blank">Kunjungi Tugas 6</a>
+              <router-link to="/" class="custom-card-link">Kembali Ke Beranda</router-link>
             </div>
           </q-card-section>
         </q-card>
