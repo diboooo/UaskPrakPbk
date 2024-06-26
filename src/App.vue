@@ -7,49 +7,49 @@
           Weather Dashboard
         </q-toolbar-title>
         <q-space />
+        <q-btn-dropdown flat label="Tugas Dio" no-caps>
+          <q-list>
+            <q-item clickable v-ripple to="/Tugas1">
+              <q-item-section>  
+                <q-item-label>Tugas 1</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-ripple to="/Tugas2">
+              <q-item-section>
+                <q-item-label>Tugas 2</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-ripple to="/Tugas3">
+              <q-item-section>
+                <q-item-label>Tugas 3</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-ripple to="/Tugas4">
+              <q-item-section>
+                <q-item-label>Tugas 4</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-ripple to="/Tugas5">
+              <q-item-section>
+                <q-item-label>Tugas 5</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-ripple to="/Tugas6">
+              <q-item-section>
+                <q-item-label>Tugas 6</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-ripple to="/Tugas7">
+              <q-item-section>
+                <q-item-label>Tugas 7</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-btn-dropdown>
       </q-toolbar>
     </q-header>
 
-    <q-drawer ref="leftDrawer" show-if-above bordered content-class="drawer-content">
-      <q-list>
-        <q-item clickable v-ripple to="/Tugas1">
-          <q-item-section>  
-            <q-item-label>Tugas 1</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/Tugas2">
-          <q-item-section>
-            <q-item-label>Tugas 2</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/Tugas3">
-          <q-item-section>
-            <q-item-label>Tugas 3</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/Tugas4">
-          <q-item-section>
-            <q-item-label>Tugas 4</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/Tugas5">
-          <q-item-section>
-            <q-item-label>Tugas 5</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/Tugas6">
-          <q-item-section>
-            <q-item-label>Tugas 6</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/Tugas7">
-          <q-item-section>
-            <q-item-label>Tugas 7</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </q-drawer>
-
+   
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style scoped>
-
+/* Styles untuk App.vue */
 body {
   font-family: 'Poppins', 'Arial', sans-serif;
   background-color: #f5f5f5;
@@ -101,7 +101,40 @@ body {
 }
 
 .q-btn-dropdown {
-  display: none; 
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+}
+
+.q-btn-dropdown .q-list {
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
+}
+
+.q-btn-dropdown .q-item {
+  padding: 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.q-btn-dropdown .q-item:hover {
+  background-color: #444444;
+}
+
+.q-btn-dropdown .q-item-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.q-btn-dropdown .q-item-label a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.q-btn-dropdown .q-item-label a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .drawer-content {
